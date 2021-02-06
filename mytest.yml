@@ -1,0 +1,11 @@
+---
+- name: testing vault
+  hosts: all
+  become: true
+  
+  tasks:
+  - name: Testing Vault
+    yum: 
+      name: httpd
+      state: installed
+      
